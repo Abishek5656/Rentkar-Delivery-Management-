@@ -15,6 +15,7 @@ export const updateAvailability = async (availability: boolean) => {
   return res.data;
 };
 
+
 export const getAllAvailablePartnerList = async () => {
   const res = await api.get('/api/partner/allpartner');
   return res.data;

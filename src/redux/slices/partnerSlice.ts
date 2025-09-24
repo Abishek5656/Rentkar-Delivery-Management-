@@ -52,6 +52,7 @@ export const fetchPartner = createAsyncThunk('partner/fetchPartner', async (_, t
   }
 });
 
+
 export const changeOrderStatus = createAsyncThunk(
   'partner/changeOrderStatus',
   async ({ orderId, status }: { orderId: string; status: string }, thunkAPI) => {

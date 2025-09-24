@@ -33,6 +33,7 @@ export default function LoginPage() {
     router.push('/partner/dashboard');
   }
 
+  
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     dispatch(loginUser({ email, password }));

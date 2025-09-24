@@ -20,6 +20,7 @@ export default function HomePage() {
     }
   }, [token, role, router]);
 
+  
   // While deciding redirect, show loader
   return (
     <Box display="flex" justifyContent="center" alignItems="center" minHeight="100vh">

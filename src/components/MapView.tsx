@@ -183,6 +183,7 @@ export default function MapView({ orders, mapCenter }: MapViewProps) {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
 
+
       {orders.map((order) =>
         order.latitude && order.longitude ? (
           <Marker key={order._id} position={[order.latitude, order.longitude]}>

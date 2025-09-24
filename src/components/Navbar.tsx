@@ -50,4 +50,5 @@ const Navbar: React.FC<NavbarProps> = ({ handleDrawerToggle }) => {
   );
 };
 
+
 export default Navbar;

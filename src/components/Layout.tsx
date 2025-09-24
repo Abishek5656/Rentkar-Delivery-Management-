@@ -175,6 +175,7 @@ export default function Layout({ children }: LayoutProps) {
     setMobileOpen(!mobileOpen);
   };
 
+  
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />

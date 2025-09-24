@@ -408,6 +408,7 @@ export default function PartnerDashboard() {
         </Box>
       )}
     </Container>
+    
   );
 }
 

@@ -77,6 +77,7 @@ const Sidebar: React.FC<SidebarProps> = ({ mobileOpen, handleDrawerToggle, drawe
         }}
         open
       >
+        
         {drawer}
       </Drawer>
     </Box>

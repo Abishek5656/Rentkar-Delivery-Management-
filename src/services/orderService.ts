@@ -24,3 +24,4 @@ export const deleteOrder = async (orderId: string) => {
   const res = await api.delete(`/api/orders/${orderId}`);
   return res.data;
 };
+

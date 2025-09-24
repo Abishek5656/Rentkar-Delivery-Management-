@@ -25,6 +25,7 @@ export default function ProtectedRoute({ children, allowedRoles }: ProtectedRout
       const storedToken = localStorage.getItem('token');
       const storedAuth = localStorage.getItem('auth');
 
+      
       if (storedToken && storedAuth) {
         const parsedAuth = JSON.parse(storedAuth);
         currentToken = storedToken;

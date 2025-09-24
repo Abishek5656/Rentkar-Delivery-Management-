@@ -105,6 +105,7 @@ const authSlice = createSlice({
       localStorage.removeItem('token');
     },
   },
+  
   extraReducers: (builder) => {
     builder
       // Login

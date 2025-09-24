@@ -12,6 +12,7 @@ interface RegisterData {
   role: 'admin' | 'partner';
 }
 
+
 export const login = async (data: LoginData) => {
   const res = await api.post('/api/auth/login', data);
   return res.data;
