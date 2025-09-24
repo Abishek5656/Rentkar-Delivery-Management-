@@ -3,11 +3,13 @@ import {
   getMyOrders,
   updateOrderStatus,
   updateAvailability,
+  getAllPartners
 } from '../controllers/partnerController.js';
 import { protect, authorizeRoles } from '../middlewares/authMiddleware.js';
 
 const router = express.Router();
 
+router.get("/allpartner", getAllPartners)
 router.get('/orders', protect, authorizeRoles('partner'), getMyOrders);
 router.put('/orders/:id/status', protect, authorizeRoles('partner'), updateOrderStatus);
 router.put('/availability', protect, authorizeRoles('partner'), updateAvailability);

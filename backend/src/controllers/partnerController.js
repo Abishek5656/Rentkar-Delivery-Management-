@@ -67,3 +67,13 @@ export const updateAvailability = async (req, res, next) => {
     next(error);
   }
 };
+
+
+export const getAllPartners = async (req, res, next) => {
+  try {
+    const users = await User.find({ role: "partner", availability: true });
+     res.json({ success: true, data: users });
+  } catch (error) {
+    next(error);
+  }
+};

@@ -80,12 +80,3 @@ export const loginUser = async (req, res, next) => {
 };
 
 
-export const getAllPartners = async (req, res, next) => {
-  try {
-    const users = await User.find({ role: "partner", availability: true });
-    res.status(200).json(users);
-  } catch (error) {
-    next(error);
-  }
-};
-
