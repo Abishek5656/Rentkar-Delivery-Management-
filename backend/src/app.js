@@ -1,5 +1,6 @@
 import express from 'express';
 import dotenv from 'dotenv';
+import cors from 'cors';
 import errorHandler from './middlewares/errorHandler.js';
 
 import authRoutes from './routes/authRoutes.js';
@@ -10,6 +11,8 @@ import partnerRoutes from './routes/partnerRoutes.js';
 dotenv.config();
 
 const app = express();
+
+app.use(cors())
 
 // Middleware
 app.use(express.json());
